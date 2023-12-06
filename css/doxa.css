@@ -1,0 +1,791 @@
+:root {
+  --primary-color: #3877dc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+*:link,
+*:visited {
+  color: #fff;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #555;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: radial-gradient(#191d27, #010203);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to right, #0000005b, rgba(0, 0, 0, 0.23)),
+    url(../img/2010.i123.005..car\ headlights\ AD\ composition.jpg) top
+      center/cover;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-radius: 0 0 3rem 3rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4%;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid #555;
+}
+
+/* Menu Nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.dx-logo {
+  font-size: 3.2rem;
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo {
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.nav-logo span {
+  color: var(--primary-color);
+}
+
+.mobile-nav-menu {
+  display: none;
+}
+
+.nav-menu-list {
+  display: flex;
+  gap: 4rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu-list a:hover {
+  padding: 1rem 2rem;
+  transition: all 0.4s ease;
+}
+
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 100vh;
+}
+
+.section-hero .hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.section-hero .hero-container h2 {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+.hero-button {
+  position: relative;
+  bottom: -20rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-button:hover {
+  box-shadow: inset 0 0 10px #5cb6ffa8;
+}
+
+.hero-button::before {
+  position: absolute;
+  content: "";
+  width: 9rem;
+  height: 9rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.about-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 130rem;
+  padding: 9.6rem 0;
+}
+
+.about-container .about-img {
+  width: 100%;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about-container .about-img img {
+  height: 30rem;
+}
+
+.about-container .about-img .about-details {
+  position: absolute;
+  transform: translate(150px, 60px);
+  background: linear-gradient(to bottom right, #15182164, #a2b1ef20);
+  padding: 2rem 2.4rem;
+  color: #fff;
+  width: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.642);
+  border-radius: 0.7rem;
+  backdrop-filter: blur(5px);
+}
+
+.about-container .about-content h2,
+.dx- h2 {
+  margin: 3.2rem 0;
+  font-size: 2.4rem;
+  color: #f3f3f3;
+}
+
+.about-container .about-content p,
+.dx- p {
+  font-size: 1.6rem;
+  color: #999;
+}
+
+.about-container .about-content a,
+.dx- a {
+  display: inline-block;
+  margin: 3.2rem 0;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 1.6rem 2.4rem;
+  text-decoration: none;
+  border-radius: 0.7rem;
+}
+
+.section-popular .dx-popular {
+  padding: 9.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-popular .dx-popular > h3 {
+  margin: 4.8rem 0;
+  font-size: 2.8rem;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.section-popular .popular-box {
+  max-width: 130rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.popular-imgs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 35rem;
+  border-radius: 0rem 1rem 4rem 1rem;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.642);
+  overflow: hidden;
+}
+
+.popular-imgs:hover {
+  background-color: #15182125;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.popular-imgs h2 {
+  color: #f4f4f4;
+  font-size: 2rem;
+}
+
+.popular-imgs h3 {
+  color: #999;
+  font-size: 1.4rem;
+}
+
+.popular-imgs .popular-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-imgs img {
+  width: 15rem;
+  height: 150px;
+  object-fit: contain;
+}
+
+.popular-imgs img:hover {
+  object-fit: contain;
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+.car-details {
+  display: flex;
+  column-gap: 5rem;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  color: #f4f4f4;
+}
+
+.car-details div {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.price {
+  margin-top: 1.5rem;
+  font-size: 2.8rem;
+  color: #f4f4f4;
+}
+
+.price:hover {
+  color: var(--primary-color);
+}
+
+.cart-image {
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: -0.09rem;
+  background-color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2rem 0.1rem 4rem 0.1rem;
+  padding: 1rem 1.5rem;
+}
+
+.dx-featured {
+  padding: 9.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dx-featured > h3 {
+  margin: 4.8rem 0;
+  font-size: 2.8rem;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.featured-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.featured-logos img {
+  object-fit: contain;
+  object-position: center;
+  vertical-align: bottom;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+  background: linear-gradient(to bottom right, #15182164, #a2b1ef20);
+  padding: 1rem;
+  backdrop-filter: blur(1115px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.featured-logos img:hover {
+  background-color: var(--primary-color);
+}
+
+.all-logo {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.featured-box {
+  max-width: 150rem;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.featured-imgs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to bottom right, #15182164, #a2b1ef20); */
+  height: 350px;
+  border-radius: 0rem 1rem 4rem 1rem;
+  padding: 3rem;
+  backdrop-filter: blur(1115px);
+  border: 1px solid rgba(255, 255, 255, 0.642);
+}
+
+.featured-imgs:hover {
+  transition: all 0.3s;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.featured-imgs h2 {
+  color: #f4f4f4;
+  font-size: 2rem;
+}
+
+.featured-imgs h3 {
+  color: #999;
+  font-size: 1.4rem;
+}
+
+.featured-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-imgs img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.featured-imgs img:hover {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+.subscribe-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 9.6rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.section-subscribe {
+  /* background-color: #0E1117; */
+  background: linear-gradient(to right, #0000005b, rgba(0, 0, 0, 0.23)),
+    url(../img/2010.i123.005..car\ headlights\ AD\ composition.jpg) center
+      top/cover;
+}
+
+.subscribe-img {
+  width: 100%;
+}
+
+.subscribe-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: right;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 9.6rem 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-about {
+  width: 70%;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-about p {
+  font-size: 1.6rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+.footer-company,
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-container h2 {
+  font-size: 2rem;
+  color: #f3f3f3;
+  margin-bottom: 1.4rem;
+}
+
+.footer-company a,
+.footer-info a {
+  font-size: 1.6rem;
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-company a:hover,
+.footer-info a:hover {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.socials-logo {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.socials-logo a {
+  text-decoration: none;
+  color: #777;
+}
+
+.fb:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.tw:hover {
+  color: #00dcfe;
+}
+
+.ig:hover {
+  color: #f300d7;
+}
+
+.copyright {
+  padding-bottom: 4.8rem;
+  font-size: 1.6rem;
+  color: #999;
+}
+
+.copyright span {
+  color: var(--primary-color);
+}
+
+.scroll-up {
+  color: #fff;
+  position: fixed;
+  left: 3rem;
+  bottom: 8rem;
+  /* background-color: #999; */
+  box-shadow: 0 5px 5px #555;
+  display: inline-flex;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  z-index: 1000;
+  transition: 0.3s;
+  padding: 0.5rem;
+  /* background: linear-gradient(to bottom right, #15182164, #a2b1ef20); */
+  /* backdrop-filter: blur(5px); */
+}
+
+.scroll-up:hover {
+  /* transform: translateY(-.25rem); */
+  color: var(--primary-color);
+}
+@media screen and (max-width: 1200px) {
+  .featured-box {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 4rem;
+    gap: 1.5rem;
+  }
+  .featured-imgs {
+    height: fit-content;
+  }
+  .section-popular .dx-popular {
+    padding: 9.6rem 0;
+  }
+  .section-popular .popular-box {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .popular-imgs {
+    width: 23rem;
+    height: fit-content;
+  }
+  .subscribe-container {
+    padding: 0 4rem;
+  }
+  .section-footer {
+    margin-top: 4.8rem;
+  }
+  .footer-container {
+    padding: 0 4rem;
+  }
+  .copyright {
+    margin-top: 4.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .featured-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-nav-menu {
+    display: block;
+    position: absolute;
+    top: 12rem;
+    right: 0;
+    backdrop-filter: blur(105px);
+    background-color: #060606ce;
+    border: 1px solid gray;
+    padding: 3rem;
+    border-radius: 0 0 0 1.5rem;
+    transition: all 0.5s ease-in;
+  }
+
+  .mobile-nav-menu .nav-menu-list {
+    flex-direction: column;
+  }
+  .mobile-nav-menu .nav-menu-list li {
+    padding: 1rem 2rem;
+  }
+  .mobile-nav-menu .nav-menu-list li a {
+    color: var(--primary-color);
+  }
+
+  .close {
+    display: none;
+  }
+
+  .btn-mobile-nav .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+    color: #3877dc;
+    margin-right: 1.5rem;
+  }
+
+  .section-about {
+    width: 100%;
+  }
+
+  .about-container .about-img .about-details {
+    transform: translate(10rem, 7rem);
+  }
+
+  .about-container,
+  .subscribe-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content,
+  .subscribe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content h2,
+  .dx- h2 {
+    text-align: center;
+    margin: 0 4.8rem;
+  }
+
+  .about-content p,
+  .dx- p {
+    text-align: center;
+    margin: 0 4.8rem;
+  }
+
+  .about-img img {
+    object-fit: contain;
+  }
+
+  .about-details {
+    transform: translate(80px, 60px);
+  }
+
+  .dx-popular > h3 {
+    margin: 4.8rem;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #f3f3f3;
+  }
+
+  .popular-box {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .popular-imgs {
+    justify-content: space-between;
+    width: 30rem;
+    height: max-content;
+  }
+
+  .featured-logos {
+    margin: 0 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .featured-box {
+    max-width: 150rem;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .featured-imgs {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  .subscribe-img img {
+    object-fit: contain;
+    object-position: center;
+    padding: 2rem;
+  }
+
+  .section-subscribe {
+    background-color: #0e1117;
+    background: linear-gradient(to right, #0000005b, rgba(0, 0, 0, 0.23)),
+      url(../img/2010.i123.005..car\ headlights\ AD\ composition.jpg) center
+        top/cover;
+    background-position: 90%;
+  }
+
+  .footer-container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 4.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 8rem;
+  }
+
+  .footer-about {
+    width: 180px;
+  }
+}
